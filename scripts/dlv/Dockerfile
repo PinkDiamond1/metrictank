@@ -13,7 +13,7 @@ ENV CGO_ENABLED 0
 RUN go get github.com/derekparker/delve/cmd/dlv
 
 
-FROM alpine:3.10.0
+FROM alpine:3.14.3
 MAINTAINER Dieter Plaetinck dieter@grafana.com
 
 RUN apk add -U tzdata
