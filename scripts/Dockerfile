@@ -14,7 +14,7 @@ RUN cp -r $MT_SRC_DIR/build /tmp/build
 ####################
 # mt-gateway image #
 ####################
-FROM alpine:3.10.0 AS mt-gateway
+FROM alpine:3.19.3 AS mt-gateway
 
 RUN mkdir -p /etc/metrictank
 COPY scripts/config/storage-schemas.conf /etc/metrictank/storage-schemas.conf
@@ -31,7 +31,7 @@ CMD ["/usr/bin/mt-gateway"]
 #########################
 # main metrictank image #
 #########################
-FROM alpine:3.10.0
+FROM alpine:3.19.3
 MAINTAINER Dieter Plaetinck dieter@grafana.com
 
 RUN apk add -U tzdata
