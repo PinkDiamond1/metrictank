@@ -8,9 +8,7 @@ GEM
     childprocess (0.5.6)
       ffi (~> 1.0, >= 1.0.11)
     clamp (0.6.5)
-    colorize (0.7.7)
-    domain_name (0.5.24)
-      unf (>= 0.0.5, < 1.0.0)
+    domain_name (0.6.20240107)
     ffi (1.9.25)
     fpm (1.4.0)
       arr-pm (~> 0.0.10)
@@ -20,27 +18,33 @@ GEM
       clamp (~> 0.6)
       ffi
       json (>= 1.7.7)
-    highline (1.7.3)
-    http-cookie (1.0.2)
+    highline (2.0.3)
+    http-accept (1.7.0)
+    http-cookie (1.0.8)
       domain_name (~> 0.5)
     json (2.3.1)
-    json_pure (1.8.2)
-    mime-types (2.6.1)
-    netrc (0.10.3)
-    package_cloud (0.2.20)
-      colorize (~> 0.6)
-      highline (~> 1.6)
-      json_pure (~> 1.8)
-      rest-client (~> 1.6)
-      thor (~> 0.18)
-    rest-client (1.8.0)
+    json_pure (2.3.1)
+    logger (1.7.0)
+    mime-types (3.7.0)
+      logger
+      mime-types-data (~> 3.2025, >= 3.2025.0507)
+    mime-types-data (3.2025.0722)
+    netrc (0.11.0)
+    package_cloud (0.3.14)
+      highline (~> 2.0.0)
+      json_pure (~> 2.3.0)
+      rainbow (= 2.2.2)
+      rest-client (~> 2.0)
+      thor (~> 1.2)
+    rainbow (2.2.2)
+      rake
+    rake (13.3.0)
+    rest-client (2.1.0)
+      http-accept (>= 1.7.0, < 2.0)
       http-cookie (>= 1.0.2, < 2.0)
-      mime-types (>= 1.16, < 3.0)
-      netrc (~> 0.7)
-    thor (0.19.1)
-    unf (0.1.4)
-      unf_ext
-    unf_ext (0.0.7.1)
+      mime-types (>= 1.16, < 4.0)
+      netrc (~> 0.8)
+    thor (1.4.0)
 
 PLATFORMS
   ruby
@@ -48,7 +52,7 @@ PLATFORMS
 DEPENDENCIES
   ffi (>= 1.9.24)
   fpm (~> 1.4)
-  package_cloud (~> 0.2)
+  package_cloud (~> 0.3, >= 0.3.09)
 
 BUNDLED WITH
-   1.16.6
+   1.17.3
