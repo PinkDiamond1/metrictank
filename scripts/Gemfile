@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
 
 gem "fpm", "~> 1.4"
-gem "package_cloud", "~> 0.2"
+gem "package_cloud", "~> 0.3", ">= 0.3.09"
 gem "ffi", ">= 1.9.24"
